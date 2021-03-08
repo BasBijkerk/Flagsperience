@@ -1,0 +1,181 @@
+﻿<Window x:Class="Flagsperience.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flagsperience"
+        mc:Ignorable="d"
+        Title="Flagsperience [Continent: North America]" Height="751" Width="1502" Foreground="#FF36393F" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="#FF36393F"/>
+    </Window.Background>
+    <Grid Margin="0,10,0,0" Height="945" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="102" Margin="512,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
+        <Button x:Name="button" Content="Menu" HorizontalAlignment="Left" Margin="521,19,0,0" VerticalAlignment="Top" Width="156" Click="button_Click" Height="56" FontSize="36" FontWeight="Bold"/>
+        <Image x:Name="Anguilla" Margin="40,117,1281,716" Source="Flag of Anguilla.gif" Stretch="Fill" ToolTip="Anguilla" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Antigua_and_Barbuda" Margin="218,117,1103,716" Source="Flag of Antigua and Barbuda.gif" Stretch="Fill" ToolTip="Antigua and Barbuda" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Aruba" Margin="396,117,925,716" Source="Flag of Aruba.gif" Stretch="Fill" ToolTip="Aruba" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Bahamas" Margin="574,117,747,716" Source="Flag of Bahamas, The.gif" Stretch="Fill" ToolTip="Bahamas" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Barbados" Margin="752,117,569,716" Source="Flag of Barbados.gif" Stretch="Fill" ToolTip="Barbados" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Belize" Margin="930,117,391,716" Source="Flag of Belize.gif" Stretch="Fill" ToolTip="Belize" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Bermuda" Margin="1108,117,213,716" Source="Flag of Bermuda.gif" Stretch="Fill" ToolTip="Bermuda" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="British_Virgin_Islands" Margin="1286,117,35,716" Source="Flag of British Virgin Islands.gif" Stretch="Fill" ToolTip="British Virgin Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Canada" Margin="40,234,1281,599" Source="Flag of Canada.gif" Stretch="Fill" ToolTip="Canada" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cayman_Islands" Margin="218,234,1103,599" Source="Flag of Cayman Islands.gif" Stretch="Fill" ToolTip="Cayman Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Costa_Rica" Margin="396,234,925,599" Source="Flag of Costa Rica.gif" Stretch="Fill" ToolTip="Costa Rica" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cuba" Margin="574,234,747,599" Source="Flag of Cuba.gif" Stretch="Fill" ToolTip="Cuba" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Dominica" Margin="752,234,569,599" Source="Flag of Dominica.gif" Stretch="Fill" ToolTip="Dominica" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Dominican_Republic" Margin="930,234,391,599" Source="Flag of Dominican Republic.gif" Stretch="Fill" ToolTip="Dominican Republic" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="El_Salvador" Margin="1108,234,213,599" Source="Flag of El Salvador.gif" Stretch="Fill" ToolTip="El Salvador" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Greenland" Margin="1286,234,35,599" Source="Flag of Greenland.gif" Stretch="Fill" ToolTip="Greenland" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Grenada" Margin="40,351,1281,482" Source="Flag of Grenada.gif" Stretch="Fill" ToolTip="Grenada" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Guatemala" Margin="218,351,1103,482" Source="Flag of Guatemala.gif" Stretch="Fill" ToolTip="Guatemala" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Haiti" Margin="396,351,925,482" Source="Flag of Haiti.gif" Stretch="Fill" ToolTip="Haiti" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Honduras" Margin="574,351,747,482" Source="Flag of Honduras.gif" Stretch="Fill" ToolTip="Honduras" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Jamaica" Margin="752,351,569,482" Source="Flag of Jamaica.gif" Stretch="Fill" ToolTip="Jamaica" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mexico" Margin="930,351,391,482" Source="Flag of Mexico.gif" Stretch="Fill" ToolTip="Mexico" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Netherlands_Antilles" Margin="1108,351,213,482" Source="Flag of Netherlands Antilles.gif" Stretch="Fill" ToolTip="Netherlands_Antilles" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Nicaragua" Margin="1286,351,35,482" Source="Flag of Nicaragua.gif" Stretch="Fill" ToolTip="Nicaragua" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Panama" Margin="40,468,1281,365" Source="Flag of Panama.gif" Stretch="Fill" ToolTip="Panama" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Puerto_Rico" Margin="218,468,1103,365" Source="Flag of Puerto Rico.gif" Stretch="Fill" ToolTip="Puerto Rico" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Barthelemy" Margin="396,468,925,365" Source="Flag of Saint Barthelemy.gif" Stretch="Fill" ToolTip="Saint Barthelemy" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Kitts_and_Nevis" Margin="574,468,747,365" Source="Flag of Saint Kitts and Nevis.gif" Stretch="Fill" ToolTip="Saint Kitts and Nevis" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Lucia" Margin="752,468,569,365" Source="Flag of Saint Lucia.gif" Stretch="Fill" ToolTip="Saint Lucia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Martin" Margin="930,468,391,365" Source="Flag of Saint Martin.gif" Stretch="Fill" ToolTip="Saint Martin" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Pierre_and_Miquelon" Margin="1108,468,213,365" Source="Flag of Saint Pierre and Miquelon.gif" Stretch="Fill" ToolTip="Saint Pierre and Miquelon" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Saint_Vincent_and_the_Grenadines" Margin="1286,468,35,365" Source="Flag of Saint Vincent and the Grenadines.gif" Stretch="Fill" ToolTip="Saint Vincent and the Grenadines" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Sint_Maarten" Margin="40,585,1281,248" Source="Flag of Sint Maarten.png" Stretch="Fill" ToolTip="Sint Maarten" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Trinidad_and_Tobago" Margin="218,585,1103,248" Source="Flag of Trinidad and Tobago.gif" Stretch="Fill" ToolTip="Trinidad and Tobago" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Turks_and_Caicos_Islands" Margin="396,585,925,248" Source="Flag of Turks and Caicos Islands.gif" Stretch="Fill" ToolTip="Turks and Caicos Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="United_States" Margin="574,585,747,248" Source="Flag of United States.gif" Stretch="Fill" ToolTip="United States" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Virgin_Islands_US" Margin="752,585,569,248" Source="Flag of Virgin Islands US.gif" Stretch="Fill" ToolTip="Virgin Islands US" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Curacao" Margin="930,585,391,248" Source="Flag of Curacaeo.png" Stretch="Fill" ToolTip="Curacao" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Guadeloupe" Margin="1108,585,213,248" Source="Flag_of_Guadeloupe.png" Stretch="Fill" ToolTip="Guadeloupe" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Martinique" Margin="1286,585,35,248" Source="Flag_of_Martinique.jpg" Stretch="Fill" ToolTip="Martinique" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Button x:Name="button1" Content="Play" HorizontalAlignment="Left" Margin="829,19,0,0" VerticalAlignment="Top" Width="156" Height="56" FontSize="36" FontWeight="Bold" Click="button1_Click"/>
+        <Label x:Name="label" Content="Find:" HorizontalAlignment="Left" Margin="521,71,0,0" VerticalAlignment="Top" Width="77" Height="35" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="574,71,0,0" VerticalAlignment="Top" Height="40" Width="258" FontSize="22"/>
+
+        <Label x:Name="WinLose" Content="" HorizontalAlignment="Left" Margin="697,19,0,0" VerticalAlignment="Top" Width="127" FontSize="22" FontWeight="Bold" Foreground="#FF1FBD1F" Height="44"/>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,-2,0" VerticalAlignment="Top" Width="1496">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="4,578,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-2,696,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="388,116,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="568,117,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="745,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="923,115,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="1101,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="1280,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-27,812,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="10,111,-12,0" VerticalAlignment="Top" Width="1496">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="13" Margin="4,457,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,-2,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-2,227,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="211,113,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="10,578,-12,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F" RenderTransformOrigin="0.5,0.5">
+            <Rectangle.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.574"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Rectangle.RenderTransform>
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="18,697,-20,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="4,342,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="-12,221,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="32,115,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="849,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Score" Content="" HorizontalAlignment="Left" Margin="886,80,0,0" VerticalAlignment="Top" Width="46"/>
+
+    </Grid>
+</Window>

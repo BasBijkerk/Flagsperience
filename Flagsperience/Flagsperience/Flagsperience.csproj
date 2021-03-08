@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{44809DA6-AE55-40F0-AE41-5AB824C19AD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Flagsperience</RootNamespace>
+    <AssemblyName>Flagsperience</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window7.xaml.cs">
+      <DependentUpon>Window7.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window6.xaml.cs">
+      <DependentUpon>Window6.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window5.xaml.cs">
+      <DependentUpon>Window5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window4.xaml.cs">
+      <DependentUpon>Window4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window3.xaml.cs">
+      <DependentUpon>Window3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlagControl.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Window7.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window6.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window5.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window4.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window3.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Afghanistan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Akrotiri.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Algeria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of American Samoa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Andorra.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Albania.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Austria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Belarus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Belgium.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bosnia and Herzegovina.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bulgaria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Croatia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Czech Republic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Denmark.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Estonia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Faroe Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Finland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of France.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Germany.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Gibraltar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Greece.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Hungary.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Iceland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Ireland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Isle of Man.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Italy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Latvia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Liechtenstein.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Lithuania.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Luxembourg.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Macedonia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Malta.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Moldova.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Monaco.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Montenegro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Netherlands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Norway.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Poland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Portugal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Romania.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Russia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of San Marino.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Serbia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Slovakia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Slovenia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Spain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sweden.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Switzerland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Ukraine.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of United Kingdom.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Marker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Anguilla.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Antigua and Barbuda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Aruba.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bahamas, The.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Barbados.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Belize.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bermuda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of British Virgin Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Canada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cayman Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Costa Rica.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cuba.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Dominica.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Dominican Republic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of El Salvador.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Greenland.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Grenada.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Guatemala.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Haiti.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Honduras.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Jamaica.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mexico.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Netherlands Antilles.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Nicaragua.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Panama.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Puerto Rico.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Barthelemy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Kitts and Nevis.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Lucia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Martin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Pierre and Miquelon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Vincent and the Grenadines.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sint Maarten.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Trinidad and Tobago.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Turks and Caicos Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of United States.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Virgin Islands US.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag_of_Curaçao.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Curacaeo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag_of_Guadeloupe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag_of_Martinique.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Argentina.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bolivia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Brazil.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Chile.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Colombia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Ecuador.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Falkland Islands %28Islas Malvinas%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Guyana.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Paraguay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Peru.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Suriname.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Uruguay.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Venezuela.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag_of_French_Guiana.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Australia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cook Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Fiji.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of French Polynesia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Guam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Kiribati.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Marshall Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Micronesia, Federated States of.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Nauru.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of New Caledonia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of New Zealand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Niue.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Northern Mariana Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Palau.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Papua New Guinea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Samoa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Solomon Islands.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tokelau.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tonga.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tuvalu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Vanuatu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Wallis and Futuna.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Armenia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Azerbaijan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bahrain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bangladesh.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Bhutan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Brunei.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cambodia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of China.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cyprus.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Georgia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Hong Kong.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of India.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Indonesia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Iran.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Iraq.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Israel.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Japan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Jordan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Kazakhstan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Korea, North.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Korea, South.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Kuwait.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Kyrgyzstan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Laos.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Lebanon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Macau.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Malaysia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Maldives.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mongolia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Nepal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Oman.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Pakistan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Palestine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Philippines.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Qatar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saudi Arabia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Singapore.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sri Lanka.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Syria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Taiwan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tajikistan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Thailand.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Timor-Leste.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Turkey.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Turkmenistan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of United Arab Emirates.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Uzbekistan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Vietnam.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Yemen.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag-Myanmar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Eswatini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Angola.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Benin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Botswana.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Burkina Faso.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Burundi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cameroon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cape Verde.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Central African Republic.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Chad.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Comoros.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Congo, Democratic Republic of the.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Congo, Republic of the.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Cote d%27Ivoire.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Djibouti.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Egypt.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Equatorial Guinea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Eritrea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Ethiopia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Gabon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Gambia, The.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Ghana.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Guinea.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Guinea-Bissau.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Kenya.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Lesotho.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Liberia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Libya.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Madagascar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Libya.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Malawi.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mali.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mauritania.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mauritius.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mayotte.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Morocco.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Mozambique.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Namibia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Niger.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Nigeria.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Rwanda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Saint Helena, Ascension, and Tristan da Cunha.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sao Tome and Principe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Senegal.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Seychelles.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sierra Leone.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Somalia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of South Africa.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Sudan.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tanzania.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Togo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Tunisia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Uganda.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Zambia.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Flag of Zimbabwe.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Réunion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="South Sudan.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

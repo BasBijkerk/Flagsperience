@@ -1,0 +1,156 @@
+﻿<Window x:Class="Flagsperience.Window5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flagsperience"
+        mc:Ignorable="d"
+        Title="Flagsperience [Continent: Australia - Oceania]" Height="514" Width="1502" Foreground="#FF36393F" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="#FF36393F"/>
+    </Window.Background>
+    <Grid Margin="0,10,0,0" Height="945" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="102" Margin="512,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
+        <Button x:Name="button" Content="Menu" HorizontalAlignment="Left" Margin="521,19,0,0" VerticalAlignment="Top" Width="156" Click="button_Click" Height="56" FontSize="36" FontWeight="Bold"/>
+        <Image x:Name="American_Samoa" Margin="40,117,1281,716" Source="Flag of American Samoa.gif" Stretch="Fill" ToolTip="American Samoa" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Australia" Margin="218,117,1103,716" Source="Flag of Australia.gif" Stretch="Fill" ToolTip="Australia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cook_Islands" Margin="396,117,925,716" Source="Flag of Cook Islands.gif" Stretch="Fill" ToolTip="Cook Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Fiji" Margin="574,117,747,716" Source="Flag of Fiji.gif" Stretch="Fill" ToolTip="Fiji" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="French_Polynesia" Margin="752,117,569,716" Source="Flag of French Polynesia.gif" Stretch="Fill" ToolTip="French Polynesia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Guam" Margin="930,117,391,716" Source="Flag of Guam.gif" Stretch="Fill" ToolTip="Guam" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Kiribati" Margin="1108,117,213,716" Source="Flag of Kiribati.gif" Stretch="Fill" ToolTip="Kiribati" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Marshall_Islands" Margin="1286,117,35,716" Source="Flag of Marshall Islands.gif" Stretch="Fill" ToolTip="Marshall Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Micronesia" Margin="40,234,1281,599" Source="Flag of Micronesia, Federated States of.gif" Stretch="Fill" ToolTip="Micronesia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Nauru" Margin="218,234,1103,599" Source="Flag of Nauru.gif" Stretch="Fill" ToolTip="Nauru" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="New_Caledonia" Margin="396,234,925,599" Source="Flag of New Caledonia.gif" Stretch="Fill" ToolTip="New Caledonia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="New_Zealand" Margin="574,234,747,599" Source="Flag of New Zealand.gif" Stretch="Fill" ToolTip="New Zealand" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Niue" Margin="752,234,569,599" Source="Flag of Niue.gif" Stretch="Fill" ToolTip="Niue" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Northern_Mariana_Islands" Margin="930,234,391,599" Source="Flag of Northern Mariana Islands.gif" Stretch="Fill" ToolTip="Northern Mariana Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Palau" Margin="1108,234,213,599" Source="Flag of Palau.gif" Stretch="Fill" ToolTip="Palau" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Papua_New_Guinea" Margin="1286,234,35,599" Source="Flag of Papua New Guinea.gif" Stretch="Fill" ToolTip="Papua New Guinea" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Samoa" Margin="40,351,1281,482" Source="Flag of Samoa.gif" Stretch="Fill" ToolTip="Samoa" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Solomon_Islands" Margin="218,351,1103,482" Source="Flag of Solomon Islands.gif" Stretch="Fill" ToolTip="Solomon Islands" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Tokelau" Margin="396,351,925,482" Source="Flag of Tokelau.gif" Stretch="Fill" ToolTip="Tokelau" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Tonga" Margin="574,351,747,482" Source="Flag of Tonga.gif" Stretch="Fill" ToolTip="Tonga" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Tuvalu" Margin="752,351,569,482" Source="Flag of Tuvalu.gif" Stretch="Fill" ToolTip="Tuvalu" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Vanuatu" Margin="930,351,391,482" Source="Flag of Vanuatu.gif" Stretch="Fill" ToolTip="Vanuatu" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Wallis_and_Futuna" Margin="1108,351,213,482" Source="Flag of Wallis and Futuna.gif" Stretch="Fill" ToolTip="Wallis and Futuna" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Button x:Name="button1" Content="Play" HorizontalAlignment="Left" Margin="829,19,0,0" VerticalAlignment="Top" Width="156" Height="56" FontSize="36" FontWeight="Bold" Click="button1_Click"/>
+        <Label x:Name="label" Content="Find:" HorizontalAlignment="Left" Margin="521,71,0,0" VerticalAlignment="Top" Width="77" Height="35" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="574,71,0,0" VerticalAlignment="Top" Height="40" Width="258" FontSize="22"/>
+
+        <Label x:Name="WinLose" Content="" HorizontalAlignment="Left" Margin="697,19,0,0" VerticalAlignment="Top" Width="127" FontSize="22" FontWeight="Bold" Foreground="#FF1FBD1F" Height="44"/>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,-2,0" VerticalAlignment="Top" Width="1496">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="4,578,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-2,696,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="388,116,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="568,117,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="745,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="923,115,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="1101,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="1280,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-27,812,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="10,111,-12,0" VerticalAlignment="Top" Width="1496">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="13" Margin="4,457,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,-2,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-2,227,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="211,113,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="10,578,-12,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="18,697,-20,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="4,342,-6,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="-12,221,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="32,115,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="849,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Score" Content="" HorizontalAlignment="Left" Margin="886,80,0,0" VerticalAlignment="Top" Width="46"/>
+
+    </Grid>
+</Window>

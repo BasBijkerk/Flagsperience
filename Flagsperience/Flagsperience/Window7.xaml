@@ -1,0 +1,201 @@
+﻿<Window x:Class="Flagsperience.Window7"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flagsperience"
+        mc:Ignorable="d"
+        Title="Flagsperience [Continent: Africa]" Height="989.978" Width="1686" Foreground="#FF36393F" ResizeMode="NoResize">
+    <Window.Background>
+        <SolidColorBrush Color="#FF36393F"/>
+    </Window.Background>
+    <Grid Margin="0,10,0,0" Height="945" VerticalAlignment="Top" HorizontalAlignment="Left" Width="1496">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="7*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="102" Margin="599,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="483"/>
+        <Button x:Name="button" Content="Menu" HorizontalAlignment="Left" Margin="608,19,0,0" VerticalAlignment="Top" Width="156" Click="button_Click" Height="56" FontSize="36" FontWeight="Bold"/>
+        <Image x:Name="Rwanda" Margin="40,2,1281,131" Source="Flag of Rwanda.gif" Stretch="Fill" ToolTip="Rwanda" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Saint_Helena" Margin="218,2,1103,131" Source="Flag of Saint Helena, Ascension, and Tristan da Cunha.gif" Stretch="Fill" ToolTip="Saint Helena" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Sao_Tome_and_Principe" Margin="396,2,925,131" Source="Flag of Sao Tome and Principe.gif" Stretch="Fill" ToolTip="Sao Tome and Principe" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Senegal" Margin="574,2,747,131" Source="Flag of Senegal.gif" Stretch="Fill" ToolTip="Senegal" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Seychelles" Margin="752,2,569,131" Source="Flag of Seychelles.gif" Stretch="Fill" ToolTip="Seychelles" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Eswatini" Margin="1471,588,-150,0" Source="Eswatini.png" Stretch="Fill" ToolTip="Eswatini" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Algeria" Margin="218,117,1103,471" Source="Flag of Algeria.gif" Stretch="Fill" ToolTip="Algeria" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Angola" Margin="396,117,925,471" Source="Flag of Angola.gif" Stretch="Fill" ToolTip="Angola" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Benin" Margin="574,117,747,471" Source="Flag of Benin.gif" Stretch="Fill" ToolTip="Benin" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Botswana" Margin="752,117,569,471" Source="Flag of Botswana.gif" Stretch="Fill" ToolTip="Botswana" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Burkina_Faso" Margin="930,117,391,471" Source="Flag of Burkina Faso.gif" Stretch="Fill" ToolTip="Burkina Faso" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Burundi" Margin="1108,117,213,471" Source="Flag of Burundi.gif" Stretch="Fill" ToolTip="Burundi" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cameroon" Margin="1286,117,35,471" Source="Flag of Cameroon.gif" Stretch="Fill" ToolTip="Cameroon" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cape_Verde" Margin="1471,5,-150,128" Source="Flag of Cape Verde.gif" Stretch="Fill" ToolTip="Cape Verde" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Central_African_Republic" Margin="218,234,1103,354" Source="Flag of Central African Republic.gif" Stretch="Fill" ToolTip="Central African Republic" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Chad" Margin="396,234,925,354" Source="Flag of Chad.gif" Stretch="Fill" ToolTip="Chad" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Comoros" Margin="574,234,747,354" Source="Flag of Comoros.gif" Stretch="Fill" ToolTip="Comoros" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Democratic_Republic_of_the_Congo" Margin="752,234,569,354" Source="Flag of Congo, Democratic Republic of the.gif" Stretch="Fill" ToolTip="Democratic Republic of the Congo" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Republic_of_the_Congo" Margin="930,234,391,354" Source="Flag of Congo, Republic of the.gif" Stretch="Fill" ToolTip="Republic of the Congo" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Cote_d_Ivoire" Margin="1108,234,213,354" Source="Flag of Cote d'Ivoire.gif" Stretch="Fill" ToolTip="Cote d'Ivoire" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Djibouti" Margin="1286,234,35,354" Source="Flag of Djibouti.gif" Stretch="Fill" ToolTip="Djibouti" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Egypt" Margin="1471,122,-150,11" Source="Flag of Egypt.gif" Stretch="Fill" ToolTip="Egypt" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Equatorial_Guinea" Margin="218,351,1103,237" Source="Flag of Equatorial Guinea.gif" Stretch="Fill" ToolTip="Equatorial Guinea" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Eritrea" Margin="396,351,925,237" Source="Flag of Eritrea.gif" Stretch="Fill" ToolTip="Eritrea" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Ethiopia" Margin="574,351,747,237" Source="Flag of Ethiopia.gif" Stretch="Fill" ToolTip="Ethiopia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Gabon" Margin="752,351,569,237" Source="Flag of Gabon.gif" Stretch="Fill" ToolTip="Gabon" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Gambia" Margin="930,351,391,237" Source="Flag of Gambia, The.gif" Stretch="Fill" ToolTip="Gambia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Ghana" Margin="1108,351,213,237" Source="Flag of Ghana.gif" Stretch="Fill" ToolTip="Ghana" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Guinea" Margin="1286,351,35,237" Source="Flag of Guinea.gif" Stretch="Fill" ToolTip="Guinea" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Guinea_Bissau" Margin="40,468,1281,120" Source="Flag of Guinea-Bissau.gif" Stretch="Fill" ToolTip="Guinea-Bissau" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Kenya" Margin="218,468,1103,120" Source="Flag of Kenya.gif" Stretch="Fill" ToolTip="Kenya" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Lesotho" Margin="396,468,925,120" Source="Flag of Lesotho.gif" Stretch="Fill" ToolTip="Lesotho" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Liberia" Margin="574,468,747,120" Source="Flag of Liberia.gif" Stretch="Fill" ToolTip="Liberia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Libya" Margin="752,468,569,120" Source="Flag of Libya.jpg" Stretch="Fill" ToolTip="Libya" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Madagascar" Margin="930,468,391,120" Source="Flag of Madagascar.gif" Stretch="Fill" ToolTip="Madagascar" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Malawi" Margin="1108,468,213,120" Source="Flag of Malawi.gif" Stretch="Fill" ToolTip="Malawi" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mali" Margin="1286,468,35,120" Source="Flag of Mali.gif" Stretch="Fill" ToolTip="Mali" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mauritania" Margin="40,585,1281,3" Source="Flag of Mauritania.gif" Stretch="Fill" ToolTip="Mauritania" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mauritius" Margin="218,585,1103,3" Source="Flag of Mauritius.gif" Stretch="Fill" ToolTip="Mauritius" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mayotte" Margin="396,585,925,3" Source="Flag of Mayotte.gif" Stretch="Fill" ToolTip="Mayotte" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Morocco" Margin="574,585,747,3" Source="Flag of Morocco.gif" Stretch="Fill" ToolTip="Morocco" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Mozambique" Margin="752,585,569,3" Source="Flag of Mozambique.gif" Stretch="Fill" ToolTip="Mozambique" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Namibia" Margin="930,585,391,3" Source="Flag of Namibia.gif" Stretch="Fill" ToolTip="Namibia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Niger" Margin="1108,585,213,3" Source="Flag of Niger.gif" Stretch="Fill" ToolTip="Niger" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Nigeria" Margin="1286,585,35,3" Source="Flag of Nigeria.gif" Stretch="Fill" ToolTip="Nigeria" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+        <Image x:Name="Somalia" Margin="1108,2,213,131" Source="Flag of Somalia.gif" Stretch="Fill" ToolTip="Somalia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Sierra_Leone" Margin="930,2,391,131" Source="Flag of Sierra Leone.gif" Stretch="Fill" ToolTip="Sierra Leone" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="South_Africa" Margin="1286,2,35,131" Source="Flag of South Africa.gif" Stretch="Fill" ToolTip="South Africa" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Tanzania" Margin="218,125,1103,8" Source="Flag of Tanzania.gif" Stretch="Fill" ToolTip="Tanzania" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Togo" Margin="396,125,925,8" Source="Flag of Togo.gif" Stretch="Fill" ToolTip="Togo" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Zimbabwe" Margin="1108,125,213,8" Source="Flag of Zimbabwe.gif" Stretch="Fill" ToolTip="Zimbabwe" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Zambia" Margin="930,125,391,8" Source="Flag of Zambia.gif" Stretch="Fill" ToolTip="Zambia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Réunion" Margin="1286,125,35,8" Source="Réunion.png" Stretch="Fill" ToolTip="Réunion" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Tunisia" Margin="574,125,747,8" Source="Flag of Tunisia.gif" Stretch="Fill" ToolTip="Tunisia" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Sudan" Margin="40,125,1281,8" Source="Flag of Sudan.gif" Stretch="Fill" ToolTip="Sudan" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="Uganda" Margin="752,125,569,8" Source="Flag of Uganda.gif" Stretch="Fill" ToolTip="Uganda" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1" Grid.Row="1"/>
+        <Image x:Name="South_Sudan" Margin="1471,470,-150,118" Source="South Sudan.jpg" Stretch="Fill" ToolTip="South Sudan" ToolTipService.InitialShowDelay="1000" MouseLeftButtonDown="Click1"/>
+
+
+        <Button x:Name="button1" Content="Play" HorizontalAlignment="Left" Margin="916,19,0,0" VerticalAlignment="Top" Width="156" Height="56" FontSize="36" FontWeight="Bold" Click="button1_Click"/>
+        <Label x:Name="label" Content="Find:" HorizontalAlignment="Left" Margin="608,71,0,0" VerticalAlignment="Top" Width="77" Height="35" FontWeight="Bold" FontSize="22"/>
+        <Label x:Name="label1" Content="" HorizontalAlignment="Left" Margin="661,71,0,0" VerticalAlignment="Top" Height="40" Width="258" FontSize="22"/>
+
+        <Label x:Name="WinLose" Content="" HorizontalAlignment="Left" Margin="784,19,0,0" VerticalAlignment="Top" Width="127" FontSize="22" FontWeight="Bold" Foreground="#FF1FBD1F" Height="44"/>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,0,0" VerticalAlignment="Top" Width="1496">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="4,578,-4,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="388,116,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="568,117,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="745,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="821" Margin="923,116,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="1101,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="1280,116,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="32,112,-157,0" VerticalAlignment="Top" Width="1621" Fill="#FF36393F" Grid.Row="1">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="10,111,-170,0" VerticalAlignment="Top" Width="1656">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+            <Rectangle.Fill>
+                <SolidColorBrush Color="#FF36393F"/>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="13" Margin="4,457,-157,0" VerticalAlignment="Top" Width="1649" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="0,346,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="8" Margin="-2,227,0,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="823" Margin="211,113,0,0" VerticalAlignment="Top" Width="8" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="15" Margin="10,578,-154,0" VerticalAlignment="Top" Width="1640" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="18,697,-154,0" VerticalAlignment="Top" Width="1632" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="4,342,-4,0" VerticalAlignment="Top" Width="1496" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="17" Margin="10,221,-157,0" VerticalAlignment="Top" Width="1643" Fill="#FF36393F">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="700" Margin="32,115,0,0" VerticalAlignment="Top" Width="9" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label Content="Score" HorizontalAlignment="Left" Margin="936,80,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Score" Content="" HorizontalAlignment="Left" Margin="973,80,0,0" VerticalAlignment="Top" Width="46"/>
+        <Rectangle HorizontalAlignment="Left" Height="16" Margin="18,234,-170,-5" VerticalAlignment="Top" Width="1648" Fill="#FF36393F" Grid.Row="1">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="825" Margin="1459,117,0,0" VerticalAlignment="Top" Width="12" Fill="#FF36393F" Grid.RowSpan="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="#FF6F7175" Opacity="0"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+
+    </Grid>
+</Window>
